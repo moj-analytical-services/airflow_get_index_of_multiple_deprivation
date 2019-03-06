@@ -1,0 +1,72 @@
+{
+    "$schema": "https://raw.githubusercontent.com/moj-analytical-services/etl_manager/schema/etl_manager/specs/table_schema.json",
+    "name": "index_of_multiple_deprivation",
+    "description": "",
+    "data_format": "parquet",
+    "columns": [
+        {
+            "name": "lsoa",
+            "type": "character",
+            "description": "j. Income Deprivation Affecting Older People Index (IDAOPI): The Income Deprivation Affecting Older People Index (IDAOPI) measures the proportion of all those aged 60 or over who experience income deprivation. It is a subset of the Income Deprivation Doma"
+        },
+        {
+            "name": "barscore",
+            "type": "double",
+            "description": "g. Barriers to Housing and Services Domain: The Barriers to Housing and Services Domain measures the physical and financial accessibility of housing and local services. The indicators fall into two sub-domains: geographical barriers, which relate to the p"
+        },
+        {
+            "name": "criscore",
+            "type": "double",
+            "description": "f. Crime Domain: The Crime Domain measures the risk of personal and material victimisation at local level.."
+        },
+        {
+            "name": "eduscore",
+            "type": "double",
+            "description": "d. Education, Skills and Training Domain: The Education, Skills and Training Deprivation Domain measures the lack of attainment and skills in the local population. The indicators fall into two sub-domains: one relating to children and young people,  and o"
+        },
+        {
+            "name": "empscore",
+            "type": "double",
+            "description": "c. Employment Deprivation Domain: The Employment Deprivation Domain measures the proportion of the working age population in an area involuntarily excluded from the labour market. This includes people who would like to work but are unable to do so due to "
+        },
+        {
+            "name": "heascore",
+            "type": "double",
+            "description": "e. Health Deprivation and Disability Domain: The Health Deprivation and Disability Domain measures the risk of premature death and the impairment of quality of life through poor physical or mental health. The domain measures morbidity, disability and prem"
+        },
+        {
+            "name": "idaci",
+            "type": "double",
+            "description": "i. Income Deprivation Affecting Children Index (IDACI): The Income Deprivation Affecting Children Index (IDACI) measures the proportion of all children aged 0 to 15 living in income deprived families. It is a subset of the Income Deprivation Domain which "
+        },
+        {
+            "name": "idaopi",
+            "type": "double",
+            "description": "j. Income Deprivation Affecting Older People Index (IDAOPI): The Income Deprivation Affecting Older People Index (IDAOPI) measures the proportion of all those aged 60 or over who experience income deprivation. It is a subset of the Income Deprivation Doma"
+        },
+        {
+            "name": "imd",
+            "type": "double",
+            "description": "a. Index of Multiple Deprivation (IMD): The Index of Multiple Deprivation combines information from the seven domains to produce an overall relative measure of deprivation. ."
+        },
+        {
+            "name": "incscore",
+            "type": "double",
+            "description": "b. Income Deprivation Domain: The Income Deprivation Domain measures the proportion of the population in an area experiencing deprivation relating to low income. The definition of low income used includes both those people that are out-of-work, and those "
+        },
+        {
+            "name": "livscore",
+            "type": "double",
+            "description": "h. Living Environment Deprivation Domain: The Living Environment Deprivation Domain measures the quality of the local environment. The indicators fall into two sub-domains. The indoors living environment measures the quality of housing; while the outdoors"
+        },
+        {
+            "name": "imd_year",
+            "type": "int",
+            "description": "The year that the values for index of multiple deprivation were observed"
+        }
+    ],
+    "partitions": [
+        "imd_year"
+    ],
+    "location": "index_of_multiple_deprivation"
+}

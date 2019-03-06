@@ -1,0 +1,6 @@
+{
+    "description": "Demo database of flights data",
+    "name": "open_data",
+    "bucket": "alpha-mojap-curated-open-data",
+    "base_folder": ""
+}
